@@ -209,7 +209,12 @@ def admin_votante(accion=""):
 
         if request.method == 'GET' and accion=="cantidad":
             df= db.sql_select("SELECT COUNT(*) as cantidad_votantes FROM votantes") 
-            return jsonify(df.to_dict(orient="records"))
+            retMap = {
+                'Message': "Consulta éxitosa",
+                'Status Code': 200,
+                "registros":df.to_dict(orient="records")
+                }
+            return jsonify(retMap)
 
 
 

@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\n\t\"nombre\":\"juan2\",\n\t\"password\":\"123\"\n}",
+					"raw": "{\n\t\n\t\"nombre\":\"LIDER3\",\n\t\"password\":\"1234\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -105,7 +105,7 @@
 			"response": []
 		},
 		{
-			"name": "LIDER CONTEOS POR LIDER",
+			"name": "LIDER VOTANTES POR LIDER",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -159,6 +159,39 @@
 						"api",
 						"lider",
 						"consultar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VOTANTE CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"nombre\":\"SEBAS\",\n\t\"apellidos\":\"PAmela\",\n\t\"telefono\": 465164,\n\t\n\t\"cedula\":102080244,\n\t\"serial_puesto\":1,\n\t\"direccion\":\"calle 34-12, Bogota\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/votante/crear",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"votante",
+						"crear"
 					]
 				}
 			},
@@ -271,39 +304,6 @@
 						"api",
 						"votante",
 						"eliminar"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "VOTANTE CREAR",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n\t\"nombre\":\"comercio\",\n\t\"apellidos\":\"ramos\",\n\t\"telefono\": 465164,\n\t\n\t\"cedula\":102080244,\n\t\"serial_puesto\":1,\n\t\"direccion\":\"calle 15\"\n\t\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:5000/api/votante/crear",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"api",
-						"votante",
-						"crear"
 					]
 				}
 			},
@@ -442,7 +442,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\n\t\"usuario\":\"juan2\",\n\t\"password\":\"123\"\n}",
+					"raw": "{\n\t\n\t\"usuario\":\"LIDER3\",\n\t\"password\":\"1234\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
